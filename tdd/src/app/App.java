@@ -1,4 +1,6 @@
 package app;
+// import app.MathLibrary;
+
 public class App {
     private static String QUITSTRING = "Q";
 
@@ -55,9 +57,10 @@ public class App {
         startingNumber = getUserInput();
         while (startingNumber > 0) {
 
+            int result = MathLibrary.Square(startingNumber);
             System.out.println("\n-----------------------------------------------------------------------");
             System.out.println("Starting Number is " + startingNumber);
-            System.out.println("The reversed number is " + 0);
+            System.out.println("The reversed number is " + result);
             System.out.println("-----------------------------------------------------------------------");
             System.out.println();
             startingNumber = getUserInput();
