@@ -7,16 +7,10 @@ public abstract class MathLibrary {
      }
 
      public static int ReverseDigits(int number) {
+
         int result = 0;
-        int workNumber = number;
-
-        while (workNumber > 0)
-        {
-            int remainder = workNumber % 10;
-            result = (result * 10) + remainder;
-            workNumber /= 10;
-        }
-
+        for( ;number != 0; number=number/10) result = result * 10 + (number % 10);  
         return result;
+        
      }
 }
