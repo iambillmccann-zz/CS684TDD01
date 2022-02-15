@@ -57,7 +57,7 @@ public class App {
         startingNumber = getUserInput();
         while (startingNumber > 0) {
 
-            int result = MathLibrary.ReverseDigits(startingNumber);
+            int result = -999; // MathLibrary.ReverseDigits(startingNumber);
             System.out.println("\n-----------------------------------------------------------------------");
             System.out.println("Starting Number is " + startingNumber);
             System.out.println("The reversed number is " + result);
